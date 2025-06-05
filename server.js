@@ -48,7 +48,6 @@ app.use('/api/setting', SettingsRouter);
 app.use('/list', ListRouter)
 app.use('/stats', StatsRouter);
 
-­// GET 요청 처리 엔드포인트 추가
 app.get("/oauth", async (req, res) => {
   const { code } = req.query;
   
